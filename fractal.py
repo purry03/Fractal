@@ -87,7 +87,6 @@ while run_game:
                         left_vel = 0
                     if right_vel < 0 :
                         right_vel = len(vel_table)-1
-                    print(left_vel,right_vel)
                     create([object.position[0],object.position[1]],vel_table[left_vel])
                     create([object.position[0],object.position[1]],vel_table[right_vel])
                     object.velocity = [0,0]

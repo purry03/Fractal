@@ -38,10 +38,12 @@ def draw(surface):
         object.draw(surface)
 
 def makeTrail(objects,color):
-    for object in objects:
-        trail = Dot(position=list(object.position),velocity=[0,0],radius=1,color=color)
-        trails.append(trail)
-    del trail
+    try:
+       for object in objects:
+           trail = Dot(position=list(object.position),velocity=[0,0],radius=1,color=color)
+           trails.append(trail)
+    except:
+       pass
 
 def drawTrail(surface):
     for trail in trails:

@@ -89,7 +89,7 @@ while run_game:
         update()
         makeTrail(objects,color)
         drawTrail(screen)
-        #draw(screen)
+        draw(screen)
 
         if maxSplits > 0:
             for object in objects:
